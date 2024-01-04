@@ -1,3 +1,12 @@
+"""
+Two approaches jumped out at me while reading this problem.
+1. Binary Search: Search for the minimum Hold that breaks the Distance record. Multiply it by 2 since there are compliments above the median.
+2. Quadratic Formula: Since there are compliments (aka symmetry) around the median, a parabola is created. Find intersections with Distance record.
+
+The approaches are identical in goal - find min/max Hold values to break the Distance record without brute force.
+I'm more familiar with quadratics than data structures & algorithms, so I chose binary search as a personal growth challenge.
+"""
+
 with open("day6\day6_input.txt", "r") as f:
     temp = f.readlines()
     time = int(temp[0].split(':')[1].replace(' ',''))
